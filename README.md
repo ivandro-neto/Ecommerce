@@ -149,6 +149,9 @@ gap: 10px;
         background-color: blue;
         padding: 10px 20px 10px 20px;
         }`
+
+##
+
 - ##### JS   
     **JS - JavaScript**
     
@@ -159,6 +162,7 @@ gap: 10px;
     `
 #    
 
-###
+
 
 **Note**::**This is an unreal Store, so don't try purchase anything!** 
+#
