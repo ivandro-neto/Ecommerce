@@ -1,0 +1,84 @@
+@import url("../css/style.css");
+
+main{
+    margin: 20px;
+    padding: var(--space_inside);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.info-container{
+    display: flex;
+    gap: 50px;
+    justify-content:space-between;
+    width: 100%;
+}
+.about-us p{
+    width: 95%;
+}
+.info-container .map{
+    padding: var(--space_inside);
+    width: 50%;
+    margin-right: 20px;
+}
+.info-container > .info{
+    line-height: 2.5em;
+    width: 50%;
+}
+p{
+    font-size: 1rem;
+}
+.map::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.contact-form form{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form{
+    padding: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.622);
+    border-radius: 20px;
+    width: 70%;
+}
+
+.contact-form input, .contact-form textarea{
+    width: 100%;
+    font-size: 1em;
+    padding: var(--space_inside);
+    border-radius: var(--radius);
+    border: 1px solid rgb(137, 137, 137);
+    margin-bottom: 10px;
+}
+.contact-form input[type='submit']{
+    font-size: 1.1em;
+    border:none;
+}
+
+@media screen and (max-width:1024px){
+    .map{
+        display:none;
+    }
+    .about-us{
+        max-width: 100%;
+    }
+    .about-us p{
+        overflow-wrap: break-word;
+        width: 90%;
+    }
+    main, .info-container .info{
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+    }
+    .info-container p{font-size:1rem; width: 100%;}
+    .contact-form{width:100%;}
+}

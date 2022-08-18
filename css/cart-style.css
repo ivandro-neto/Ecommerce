@@ -1,0 +1,189 @@
+@import url('style.css');
+
+.items, #list{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+}
+#list{
+    width: 45%;
+    flex-direction: column;
+}
+#list h2{
+    align-self: flex-start;
+    font-size: 2em;
+}
+.payment-section h2{
+    font-size: 2em;
+}
+.items{
+    gap: 30px;
+    border: .5px solid rgb(137, 137, 137);
+}
+.items img{
+    width: 7%;
+}
+main{
+    display:flex;
+    gap: 10px;
+    width: 100%;
+    padding: 20px;
+}
+.newsletters{
+    margin-top: 100px;
+}
+.payment-section{
+    border: 1px solid rgb(137, 137, 137);
+    min-width: 55%;
+    padding: 30px;
+    border-radius: 20px;
+}
+.payment-section form, .cardinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.payment-section input[type='text']{
+    width: 80%;
+    font-size: 1em;
+    padding: var(--space_inside);
+    border-radius: var(--radius);
+    border: 1px solid rgb(137, 137, 137);
+}
+
+.address input{
+    width: 25% !important;
+}
+.payment-section select{
+    font-size: 1em;
+    width: 30%;
+    padding: var(--space_inside);
+    border-radius: var(--radius);
+}
+.cardinfo{
+    gap: 15px;
+}
+.cardinfo input[type='date'] , .cardinfo input[type='submit'] {
+    padding: var(--space_inside);
+    border-radius: var(--radius);
+}
+.card-data{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.cardinfo input[type='text']:first-child{
+    text-align: center;
+    
+}
+#value{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2.5em;
+}
+
+input[type='submit']{
+    border: none;
+    background-color: var(--orange) ;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color 500ms;
+    font-size: 1.5em;
+    padding: var(--space_inside);
+    
+}
+.paypal-btn{
+    background-color: blue !important;
+    transition: all .3s ease !important;
+}
+
+.paypal-btn:hover{
+    background-color: rgb(77, 77, 250);
+}
+
+.qtn{
+    width: 40px;
+    font-size: 1em;
+    text-align: center;
+}
+#cvv{
+    width: 15%;
+}
+#address1, #cvv{
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 1024px){
+    #list, .payment-section, main{
+        width: 100%;
+    }
+    .items{
+        width: 100vw;
+        gap: 20px;
+    }
+    .items h4{
+        font-size: .8em;
+    }
+    .items::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .items .cart-price{
+        font-size: 1rem;
+    }
+    .items img{
+        width: 15%;
+    }
+    .items button , .items input{
+        font-size: .6rem;
+        padding: 15px;
+    }
+    main{
+        flex-direction: column;
+    }
+    main::after{
+        display: table;
+        content: "";
+        clear: both;
+        
+    }
+    .payment-section input[type='text'], .card-data{
+        width: 100%;
+    }
+    
+    .card-data #cvv{
+        width: 25%;
+    }
+    .newsletters{
+        margin-top: 610px;
+    }
+}
+@media screen and (max-width:400px){
+    .items{
+        width: 100vw;
+        gap: 10px;
+    }
+    .items h4{
+        font-size: .5em;
+    }
+    .items::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .items .cart-price{
+        font-size: 1rem;
+    }
+    .items img{
+        min-width: 15%;
+    }
+    .items button , .items input{
+        font-size: .5rem;
+        padding: 10px;
+    }   
+}

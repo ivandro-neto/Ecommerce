@@ -1,0 +1,123 @@
+@import url("../css/style_store.css");
+
+.main-product{
+    display: flex;
+    flex-direction:column;
+    margin: 50px 30px;
+    justify-content: flex-start;
+    width: 90vw;
+    padding: 30px;
+    background-color: rgb(249, 249, 249);
+    border-radius:20px;
+    box-shadow: 0 0 20px inset rgba(0, 0, 0, 0.090);
+}
+.main-image{
+    display: flex;
+    gap: 80px;
+    padding: 10px;
+    width: 100%;
+}
+.image{
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px inset rgba(0, 0, 0, 0.343);
+}
+.image img{
+    width: 100%;
+    border-radius: 20px;
+}
+.img-container{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+.main-product-description{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding: 10px 50px;
+    gap: 20px;
+    width: 75%;
+}
+.main-product-description h4{
+    font-size: 2.9em;
+}
+.main-product-price{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 90%;
+}
+.main-product-price span{
+    font-size: 3em;
+}
+.main-product-price button{
+    font-size: 1.5em;
+    border-radius: 50px;
+}
+.secondary-images{
+    display: flex;
+    gap: 20px;
+    background-color: rgb(221, 221, 221);
+    max-width: 530px;
+    justify-content: space-between;
+    padding: 10px;
+    overflow-x: scroll;
+    border-radius: 20px;
+}
+.secondary-images img{
+    width: 15%;
+    border-radius: 10px;
+}
+.boxes{
+    margin-bottom: 50px;
+}
+#qnt{
+    width: 55px; 
+    font-size: 1.6rem; 
+    padding: 5px;
+}
+.main-description{
+    width: 85%;
+}
+.main-rate{
+    font-size: 2em;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.price{
+    display: flex;
+    width: 100%;
+    align-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    gap: 40px;
+}
+#size{
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 768px){
+    .main-image, .main-product-description, .img-container, .main-product-price{
+        width: 100%;
+        flex-direction: column;
+        font-size: .6rem;
+        padding: 0;
+    }
+    #size{
+        font-size: 2.4em;
+    }
+    .main-description p{
+        font-size: 1rem;
+    }
+    .main-description::after{
+        content: "";
+        width: 100%;
+        clear: both;
+    }
+}

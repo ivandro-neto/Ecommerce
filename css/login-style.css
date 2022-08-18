@@ -1,0 +1,141 @@
+@import url('style.css');
+main *{
+    width: 100%;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    transition: all 500ms ease;
+}
+
+.log-container{
+    width: 70%;
+    height: 90%;
+    max-height: 100%;
+    display: flex;
+    position: relative;
+    border: .5px solid #000;
+}
+
+.wall{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    border: .5px solid #000;
+}
+.wall img{
+    width: 100%;
+    filter: grayscale(35%);
+}
+
+.wall .img2{
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    left: 0;
+}
+.wall .img3{
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+    left: 0;
+}
+a{
+    cursor: pointer;
+}
+.login-buttons{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.login-buttons button{
+    font-size: .8em;
+    padding: 15px;
+}
+.login-form, .signup-form{
+    display:flex;
+    flex-direction: column;
+    text-align: justify;
+}
+.log-container input{
+    width: 100%;
+    font-size: .8em;
+    padding: var(--space_inside);
+    border-radius: var(--radius);
+    border: 1px solid rgb(137, 137, 137);
+    margin-bottom: 10px;
+}
+.login-section, .signup-section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 50px;
+    gap: 10px;
+}
+
+.google{
+    background-color: #fff;
+    color: #000;
+    border: .5px solid #000;
+}
+
+.facebook{
+    background-color: rgb(48, 48, 197);
+}
+
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(600px);
+    
+    }
+}
+@keyframes moveback {
+    from{
+        transform: translateX(600px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+/* Mobile view */
+
+@media screen and (max-width: 768px){
+    main{
+        display: block;
+    }
+    .wall{
+        display: none;
+    }
+    .log-container{
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .login-section{
+        position: absolute;
+        width: 100%;
+        opacity: 1;
+        transition: all 300ms;
+        transition-delay: 500ms;
+    }
+    .signup-section{
+        position: absolute;
+        width: 100%;
+        opacity: 0;
+        padding: 10px 50px 10px 50px;
+        transition: all 300ms ;
+        transition-delay: 500ms;
+    }
+}
