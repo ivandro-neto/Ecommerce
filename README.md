@@ -65,7 +65,8 @@ margin-bottom:30px;
 display: flex;
 width: 100%; 
 align-items: center;
-gap: 10px;  
+gap: 10px; 
+border: 1px dotted red; 
 ">     <p
         style="
         font-size:2.5em;
