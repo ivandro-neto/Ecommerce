@@ -71,10 +71,7 @@ gap: 10px;
             "
         >.
         </p>  
-        <img 
-        src="
-        images/icons/logo_white_background.png
-        " 
+        <img src="images/icons/logo_white_background.png" 
         width="60px" 
         alt="Ivandro Neto Logo"
         /> 
