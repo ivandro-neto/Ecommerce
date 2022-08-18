@@ -16,27 +16,31 @@ margin-bottom:30px;
 </div>
 
 ## Preview
-#### Home
+ **Home**
+
 ![Home](/Screenshots/home1.png)
 ![Home](/Screenshots/home2.png)
 
-#### Store 
+**Store** 
 
 ![Store](/Screenshots/store1.png)
 
 ### 
 
-#### about
+**About**
+
 ![about](/Screenshots/about1.png)
 
 ### 
 
-#### Login
+**Login**
+
 ![Login](/Screenshots/login.png)
 
 ### 
 
-#### Cart
+**Cart**
+
 ![Cart](/Screenshots/cart.png)
 
 ##
