@@ -41,14 +41,14 @@ margin-bottom:30px;
 
 ##
 # Index
-- [Preview](##Preview)
+- [Preview](#Preview)
 - [Links](#Links)
-    - [WebSite](##WebSite-Preview)
-    - [Source Code](##Source-Code)
+    - [WebSite](#WebSite-Preview)
+    - [Source Code](#Source-Code)
 - [About](#About)
-    - [About Brand](###About-Brand)
-    - [About The Site](###About-The-Site)
-        - [Technologies Used](####Technologies-Used)
+    - [About Brand](#About-Brand)
+    - [About The Site](#About-The-Site)
+        - [Technologies Used](#Technologies-Used)
 
 ## 
 # Links
