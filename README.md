@@ -62,7 +62,8 @@ margin-bottom:30px;
 ### About-Brand
 
 <div style="
-display: flex; 
+display: flex;
+width: 100%; 
 align-items: center;
 gap: 10px;  
 ">     <p
