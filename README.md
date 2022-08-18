@@ -26,8 +26,8 @@ margin-bottom:30px;
 
 ### 
 
-#### About
-![About](/Screenshots/about1.png)
+#### about
+![about](/Screenshots/about1.png)
 
 ### 
 
@@ -51,7 +51,7 @@ margin-bottom:30px;
         - [Technologies Used](####Technologies-Used)
 
 ## 
-
+# Links
 ## WebSite-Preview
 
 [E-Commerce site](https://ivandro-neto.github.io/E-Commerce-WebSite/)
