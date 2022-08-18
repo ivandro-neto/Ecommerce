@@ -153,9 +153,8 @@ gap: 10px;
     eg.:
     `const Element = document.getElementById(Element_id)
     `
-    
-    
-        
+#    
 
+###
 
 **Note**::**This is an unreal Store, so don't try purchase anything!** 
