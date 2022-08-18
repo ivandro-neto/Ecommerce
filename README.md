@@ -1,8 +1,9 @@
-# E-Commerce-WebSite
+#
 <div style="
-display: flex; 
+display: flex;
+flex-direction:column; 
 align-items: center; 
-gap: 40px;  
+gap: 20px;  
 margin-bottom:30px;
 ">
         <img 
@@ -63,10 +64,10 @@ margin-bottom:30px;
 
 <div style="
 display: flex;
-width: 100%; 
-align-items: center;
+width: 100%;
+flex-direction: column;
+align-items: center; 
 gap: 10px; 
-border: 1px dotted red; 
 ">     <p
         style="
         font-size:2.5em;
