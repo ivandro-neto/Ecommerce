@@ -85,9 +85,19 @@ a{
     color: #000;
     border: .5px solid #000;
 }
-
+.fa-google, .fa-facebook{
+    width: 10%;
+    height: 1.5em;
+}
+.fa-facebook{
+    filter: invert(100%);
+}
 .facebook{
     background-color: rgb(48, 48, 197);
+}
+.facebook, .google{
+    display: flex;
+    justify-content: center;
 }
 
 @keyframes move {
