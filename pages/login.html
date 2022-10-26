@@ -78,6 +78,7 @@
             /* wallImg.setAttribute('src', '../images/img/people/login3.jpg') */
         })
        if(window.matchMedia('(max-width: 768px)')){
+
         login.addEventListener("click", () =>{
             document.querySelector('.login-section').style.opacity = 1
             document.querySelector('.login-section').style.pointerEvents = 'all'
@@ -90,6 +91,20 @@
             document.querySelector('.login-section').style.pointerEvents = 'none'
             document.querySelector('.signup-section').style.opacity = 1
             document.querySelector('.signup-section').style.pointerEvents = 'all'
+        })
+       }
+       if(window.matchMedia('(min-width: 1337px)')){
+        login.addEventListener("click", () =>{
+            wall.animation = 'moveback_mobile_mode 500ms forwards'
+            img3.style.transition ="all 500ms"
+            img3.style.opacity = "0"
+            /* wallImg.setAttribute('src', '../images/img/people/login2.jpg') */
+        })
+        sign.addEventListener("click", () =>{
+            wall.animation = 'move_mobile_mode 500ms forwards'
+            img3.style.transition ="all 500ms"
+            img3.style.opacity = "1"
+            /* wallImg.setAttribute('src', '../images/img/people/login3.jpg') */
         })
        } 
     </script>
