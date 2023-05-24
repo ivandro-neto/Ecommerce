@@ -122,15 +122,7 @@ a{
     justify-content: center;
 }
 
-@keyframes grayScale {
-    from{
-        filter: grayscale(100%);
-    }
-    to{
-        filter: grayscale(35%);
 
-    }
-}
 @keyframes move {
     from{
         left: 0;
@@ -150,7 +142,14 @@ a{
 
 
 /* Mobile view */
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1000px) and (max-width: 1099px){
+    .wall img{
+        width: 150%;
+        /* filter: grayscale(35%); */
+    }
+   
+}
+@media screen and (min-width: 1100px){
     .wall img{
         width: 120%;
         /* filter: grayscale(35%); */
