@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,30 +9,28 @@
     <script src="https://kit.fontawesome.com/862cb3a9f7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/login-style.css">
 </head>
+
 <body>
     <div class="container">
         <section class="n">
-            <div class="logo"><a href="home.html"><img src="../images/icons/logo.png" alt="IN logo" width="72"></a></div>
+            <div class="logo"><a href="home.html"><img src="../images/icons/logo.png" alt="IN logo" width="72"></a>
+            </div>
         </section>
         <main>
             <div class="log-container">
                 <div class="wall" id="wall">
-                    <img src="../images/img/people/login2.jpg" id="wall-img"alt="wall" class="img2">
-                    <img src="../images/img/people/login3.jpg" id="wall-img"alt="wall" class="img3">
+                    <img src="../images/img/people/login2.jpg" id="wall-img" alt="wall" class="img2">
+                    <img src="../images/img/people/login3.jpg" id="wall-img" alt="wall" class="img3">
                 </div>
                 <div class="signup-section">
                     <h1>Sign Up</h1>
                     <form class="signup-form">
-                        <label for="new-user-firstname">First Name:</label>
-                        <input type="text" name="new-user-firstname" placeholder="Ivandro">
-                        <label for="new-user-lastname">Last Name:</label>
-                        <input type="text" name="new-user-lastname" placeholder="Neto">
-                        <label for="email">Email:</label>
+                        <input type="text" name="new-user-firstname" placeholder="First Name">
+                        <input type="text" name="new-user-lastname" placeholder="Last Name">
                         <input type="email" placeholder="Email" name="email" id="new-user-email">
-                        <label for="new-password">New Password:</label>
                         <input type="password" name="new-password" id="new-user-password" placeholder="Set Password">
-                        <label for="conf-password">Confirm Password:</label>
-                        <input type="password" name="conf-password" id="new-user-password-confirmation" placeholder="Confirm Password">
+                        <input type="password" name="conf-password" id="new-user-password-confirmation"
+                            placeholder="Confirm Password">
                     </form>
                     <div class="login-buttons">
                         <button>Sign Up</button>
@@ -62,51 +61,68 @@
         const wall = document.getElementById('wall').style
         const login = document.getElementById('login')
         const sign = document.getElementById('sign')
-        const img2= document.querySelector('.img2')
+        const img2 = document.querySelector('.img2')
         const img3 = document.querySelector('.img3')
-        
-        login.addEventListener("click", () =>{
-            wall.animation = 'moveback 500ms forwards'
-            img3.style.transition ="all 500ms"
-            img3.style.opacity = "0"
-            /* wallImg.setAttribute('src', '../images/img/people/login2.jpg') */
-        })
-        sign.addEventListener("click", () =>{
-            wall.animation = 'move 500ms forwards'
-            img3.style.transition ="all 500ms"
-            img3.style.opacity = "1"
-            /* wallImg.setAttribute('src', '../images/img/people/login3.jpg') */
-        })
-       if(window.matchMedia('(max-width: 768px)')){
 
-        login.addEventListener("click", () =>{
-            document.querySelector('.login-section').style.opacity = 1
-            document.querySelector('.login-section').style.pointerEvents = 'all'
-            document.querySelector('.signup-section').style.opacity = 0
-            document.querySelector('.signup-section').style.pointerEvents = 'none'
-            /* wallImg.setAttribute('src', '../images/img/people/login2.jpg') */
-        })
-        sign.addEventListener("click", () =>{
-            document.querySelector('.login-section').style.opacity = 0
-            document.querySelector('.login-section').style.pointerEvents = 'none'
-            document.querySelector('.signup-section').style.opacity = 1
-            document.querySelector('.signup-section').style.pointerEvents = 'all'
-        })
-       }
-       if(window.matchMedia('(min-width: 1337px)')){
-        login.addEventListener("click", () =>{
-            wall.animation = 'moveback_mobile_mode 500ms forwards'
-            img3.style.transition ="all 500ms"
+        login.addEventListener("click", () => {
+            wall.animation = 'moveback 500ms forwards'
+            img3.style.transition = "all 500ms"
+            img2.classList.add('graying')
+            setTimeout(()=>{
+                img2.classList.remove('graying')
+
+            }, 1500)
             img3.style.opacity = "0"
             /* wallImg.setAttribute('src', '../images/img/people/login2.jpg') */
         })
-        sign.addEventListener("click", () =>{
-            wall.animation = 'move_mobile_mode 500ms forwards'
-            img3.style.transition ="all 500ms"
+        sign.addEventListener("click", () => {
+            wall.animation = 'move 500ms forwards'
+            img3.classList.add('graying')
+            setTimeout(() => {
+                img3.classList.remove('graying')
+
+            }, 1500)
+            img3.style.transition = "all 500ms"
             img3.style.opacity = "1"
             /* wallImg.setAttribute('src', '../images/img/people/login3.jpg') */
         })
-       } 
+        if (window.matchMedia('(max-width: 768px)')) {
+
+            login.addEventListener("click", () => {
+                document.querySelector('.login-section').style.opacity = 1
+                document.querySelector('.login-section').style.pointerEvents = 'all'
+                
+                setTimeout(()=>{
+                    document.querySelector('.signup-section').style.opacity = 0
+                },500)
+                
+                document.querySelector('.signup-section').style.pointerEvents = 'none'
+                /* wallImg.setAttribute('src', '../images/img/people/login2.jpg') */
+            })
+            sign.addEventListener("click", () => {
+                setTimeout(() => {
+                    document.querySelector('.login-section').style.opacity = 0
+                },500)
+                document.querySelector('.login-section').style.pointerEvents = 'none'
+                document.querySelector('.signup-section').style.opacity = 1
+                document.querySelector('.signup-section').style.pointerEvents = 'all'
+            })
+        }
+        if (window.matchMedia('(min-width: 1337px)')) {
+            login.addEventListener("click", () => {
+                wall.animation = 'moveback_mobile_mode 500ms forwards'
+                img3.style.transition = "all 500ms"
+                img3.style.opacity = "0"
+                /* wallImg.setAttribute('src', '../images/img/people/login2.jpg') */
+            })
+            sign.addEventListener("click", () => {
+                wall.animation = 'move_mobile_mode 500ms forwards'
+                img3.style.transition = "all 500ms"
+                img3.style.opacity = "1"
+                /* wallImg.setAttribute('src', '../images/img/people/login3.jpg') */
+            })
+        } 
     </script>
 </body>
+
 </html>

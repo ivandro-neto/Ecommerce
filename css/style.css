@@ -494,7 +494,7 @@ footer h3{
     
     }
 
-    @keyframes move {
+@keyframes move {
         0%{
             left:0px;
             transform: scale(1);
