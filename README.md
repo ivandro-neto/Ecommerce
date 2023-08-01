@@ -58,10 +58,10 @@ margin-bottom:30px;
 # Links
 ## WebSite-Preview
 
-[E-Commerce site](https://ivandro-neto.github.io/E-Commerce-WebSite/)
+[E-Commerce site](https://ivandro-neto.github.io/Ecommerce/)
 
 ## Source-Code
-[Source Code](https://github.com/ivandro-neto/E-Commerce-WebSite.git)
+[Source Code](https://github.com/ivandro-neto/Ecommerce.git)
 # About
 
 ### About-Brand
